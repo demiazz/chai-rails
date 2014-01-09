@@ -1,24 +1,31 @@
-# Chai::Rails
+# Chai for Rails
 
-TODO: Write a gem description
+Chai via asset pipeline
+
+## Before install
+
+If you are use [Bower](http://bower.io/) with your Rails project - use them for
+Chai providing, instead this gem.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'chai-rails'
+    group :test, :development dp
+      gem "chai-rails"
+    end
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Add this line to your test manifest file:
 
-    $ gem install chai-rails
+    //= require chai
 
 ## Usage
 
-TODO: Write usage instructions here
+Read about Chai [here](http://chaijs.com/)
 
 ## Contributing
 

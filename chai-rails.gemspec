@@ -1,23 +1,20 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'chai/rails/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "chai-rails"
-  spec.version       = Chai::Rails::VERSION
-  spec.authors       = ["Alexey Plutalov"]
-  spec.email         = ["demiazz.py@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+require File.expand_path("../lib/chai/rails/version", __FILE__)
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+Gem::Specification.new do |gem|
+  gem.authors       = ["Alexey Plutalov"]
+  gem.email         = ["demiazz.py@gmail.com"]
+  gem.summary       = "Chai via asset pipeline"
+  gem.homepage      = "http://github.com/demiazz/chai-rails"
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  gem.files         = `git ls-files`.split("\n")
+  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  gem.name          = "chai-rails"
+  gem.require_paths = ["lib"]
+  gem.version       = Chai::Rails::VERSION
+
+  gem.add_dependency "railties", ">= 3.1"
 end
+
+
