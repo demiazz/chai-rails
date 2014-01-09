@@ -1,4 +1,4 @@
-# Chai for Rails
+# Chai for Rails <a href="http://badge.fury.io/rb/chai-rails"><img src="https://badge.fury.io/rb/chai-rails@2x.png" alt="Gem Version" height="18"></a>
 
 Chai via assets pipeline.
 
