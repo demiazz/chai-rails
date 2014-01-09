@@ -5,7 +5,7 @@ require File.expand_path("../lib/chai/rails/version", __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Alexey Plutalov"]
   gem.email         = ["demiazz.py@gmail.com"]
-  gem.summary       = "Chai via asset pipeline"
+  gem.summary       = "Chai via assets pipeline"
   gem.homepage      = "http://github.com/demiazz/chai-rails"
 
   gem.files         = `git ls-files`.split("\n")

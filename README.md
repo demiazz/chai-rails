@@ -1,6 +1,6 @@
 # Chai for Rails
 
-Chai via asset pipeline
+Chai via assets pipeline.
 
 ## Before install
 
@@ -25,7 +25,7 @@ Add this line to your test manifest file:
 
 ## Usage
 
-Read about Chai [here](http://chaijs.com/)
+Read about Chai [here](http://chaijs.com/).
 
 ## Contributing
 
